@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7D7E3C1799840858E88B727 /* libPods-VVStackTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2A1DA0490F44398E47405E /* libPods-VVStackTests.a */; };
 		D15CFD5618AD0A3100C1635E /* VVStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D15CFD5518AD0A3100C1635E /* VVStack.m */; };
+		D175760218AF691000FBC41C /* SimpleStringSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D175760118AF691000FBC41C /* SimpleStringSpec.m */; };
 		D1CF742318AC67A6001F28E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CF742218AC67A6001F28E4 /* Foundation.framework */; };
 		D1CF742518AC67A6001F28E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CF742418AC67A6001F28E4 /* CoreGraphics.framework */; };
 		D1CF742718AC67A6001F28E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CF742618AC67A6001F28E4 /* UIKit.framework */; };
@@ -33,8 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40A46F7791AB48E8BB68C8C5 /* Pods-VVStackTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVStackTests.xcconfig"; path = "Pods/Pods-VVStackTests.xcconfig"; sourceTree = "<group>"; };
+		8B2A1DA0490F44398E47405E /* libPods-VVStackTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VVStackTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15CFD5418AD0A3100C1635E /* VVStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVStack.h; sourceTree = "<group>"; };
 		D15CFD5518AD0A3100C1635E /* VVStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVStack.m; sourceTree = "<group>"; };
+		D175760118AF691000FBC41C /* SimpleStringSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleStringSpec.m; sourceTree = "<group>"; };
 		D1CF741F18AC67A6001F28E4 /* VVStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VVStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1CF742218AC67A6001F28E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D1CF742418AC67A6001F28E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -71,6 +76,7 @@
 				D1CF743C18AC67A6001F28E4 /* XCTest.framework in Frameworks */,
 				D1CF743E18AC67A6001F28E4 /* UIKit.framework in Frameworks */,
 				D1CF743D18AC67A6001F28E4 /* Foundation.framework in Frameworks */,
+				A7D7E3C1799840858E88B727 /* libPods-VVStackTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +90,7 @@
 				D1CF744118AC67A6001F28E4 /* VVStackTests */,
 				D1CF742118AC67A6001F28E4 /* Frameworks */,
 				D1CF742018AC67A6001F28E4 /* Products */,
+				40A46F7791AB48E8BB68C8C5 /* Pods-VVStackTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +110,7 @@
 				D1CF742418AC67A6001F28E4 /* CoreGraphics.framework */,
 				D1CF742618AC67A6001F28E4 /* UIKit.framework */,
 				D1CF743B18AC67A6001F28E4 /* XCTest.framework */,
+				8B2A1DA0490F44398E47405E /* libPods-VVStackTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -135,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				D1CF744718AC67A6001F28E4 /* VVStackTests.m */,
+				D175760118AF691000FBC41C /* SimpleStringSpec.m */,
 				D1CF744218AC67A6001F28E4 /* Supporting Files */,
 			);
 			path = VVStackTests;
@@ -173,9 +182,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1CF744E18AC67A6001F28E4 /* Build configuration list for PBXNativeTarget "VVStackTests" */;
 			buildPhases = (
+				9C6948EEC57541DFAFE61C99 /* Check Pods Manifest.lock */,
 				D1CF743618AC67A6001F28E4 /* Sources */,
 				D1CF743718AC67A6001F28E4 /* Frameworks */,
 				D1CF743818AC67A6001F28E4 /* Resources */,
+				CCF97B7B763141A888AEC08A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,6 +250,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9C6948EEC57541DFAFE61C99 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CCF97B7B763141A888AEC08A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-VVStackTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D1CF741B18AC67A6001F28E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -255,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1CF744818AC67A6001F28E4 /* VVStackTests.m in Sources */,
+				D175760218AF691000FBC41C /* SimpleStringSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +433,7 @@
 		};
 		D1CF744F18AC67A6001F28E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40A46F7791AB48E8BB68C8C5 /* Pods-VVStackTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VVStack.app/VVStack";
@@ -411,6 +457,7 @@
 		};
 		D1CF745018AC67A6001F28E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40A46F7791AB48E8BB68C8C5 /* Pods-VVStackTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VVStack.app/VVStack";
