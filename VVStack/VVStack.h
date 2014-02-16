@@ -11,4 +11,5 @@
 @interface VVStack : NSObject
 - (void)push:(double)num;
 - (double)top;
+- (double)pop;
 @end

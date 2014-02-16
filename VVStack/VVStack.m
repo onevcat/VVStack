@@ -27,4 +27,17 @@
 - (double)top {
     return [[self.numbers lastObject] doubleValue];
 }
+
+- (NSUInteger)count {
+    return [self.numbers count];
+}
+
+- (double)pop {
+    if ([self count] == 0) {
+        [NSException raise:@"VVStackPopEmptyException" format:@"Can not pop an empty stack."];
+    }
+    double result = [self top];
+    [self.numbers removeLastObject];
+    return result;
+}
 @end

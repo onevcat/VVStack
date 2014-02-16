@@ -10,6 +10,7 @@
 		A7D7E3C1799840858E88B727 /* libPods-VVStackTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2A1DA0490F44398E47405E /* libPods-VVStackTests.a */; };
 		D15CFD5618AD0A3100C1635E /* VVStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D15CFD5518AD0A3100C1635E /* VVStack.m */; };
 		D175760218AF691000FBC41C /* SimpleStringSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D175760118AF691000FBC41C /* SimpleStringSpec.m */; };
+		D175760418AFB67B00FBC41C /* VVStackSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D175760318AFB67B00FBC41C /* VVStackSpec.m */; };
 		D1CF742318AC67A6001F28E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CF742218AC67A6001F28E4 /* Foundation.framework */; };
 		D1CF742518AC67A6001F28E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CF742418AC67A6001F28E4 /* CoreGraphics.framework */; };
 		D1CF742718AC67A6001F28E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CF742618AC67A6001F28E4 /* UIKit.framework */; };
@@ -40,6 +41,7 @@
 		D15CFD5418AD0A3100C1635E /* VVStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVStack.h; sourceTree = "<group>"; };
 		D15CFD5518AD0A3100C1635E /* VVStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVStack.m; sourceTree = "<group>"; };
 		D175760118AF691000FBC41C /* SimpleStringSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleStringSpec.m; sourceTree = "<group>"; };
+		D175760318AFB67B00FBC41C /* VVStackSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVStackSpec.m; sourceTree = "<group>"; };
 		D1CF741F18AC67A6001F28E4 /* VVStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VVStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1CF742218AC67A6001F28E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D1CF742418AC67A6001F28E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -144,6 +146,7 @@
 			children = (
 				D1CF744718AC67A6001F28E4 /* VVStackTests.m */,
 				D175760118AF691000FBC41C /* SimpleStringSpec.m */,
+				D175760318AFB67B00FBC41C /* VVStackSpec.m */,
 				D1CF744218AC67A6001F28E4 /* Supporting Files */,
 			);
 			path = VVStackTests;
@@ -300,6 +303,7 @@
 			files = (
 				D1CF744818AC67A6001F28E4 /* VVStackTests.m in Sources */,
 				D175760218AF691000FBC41C /* SimpleStringSpec.m in Sources */,
+				D175760418AFB67B00FBC41C /* VVStackSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
